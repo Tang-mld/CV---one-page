@@ -1,0 +1,137 @@
+/* ####################
+        ENTETE
+#####################*/  
+
+#tm-entete {
+
+    // Navbar
+    nav{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        font-weight: 800;
+        font-size: 1rem;
+
+        // Logo du CV TMD
+        .tm-logo {
+            // background-image: url("../../public/img/icons/compétences.png");
+            // background-size: cover;
+            // color: white;
+            // position: absolute;
+            // left: 0;
+            flex: 0 0 20%;
+            margin-top: 15px;
+            margin-left: 5px;
+           
+            a {
+                color: black;      
+                text-decoration: none;
+            }
+        }
+
+        .tm-navbar {
+            flex: 0 0 60%;
+            text-align: center;
+        }
+
+        ul {
+            margin-bottom: 5px;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-bottom: 15px;
+                margin-right: 20px; 
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+
+        // Icones réseaux pour me contacter
+        > div.tm-reseau {
+    
+            display: flex;
+            text-align: right;
+            align-self: center;
+            align-items: center;
+
+            // Linkedin
+            a.tm-linkedin {
+                background-image: url("../../public/img/icons/linkedIn.png");
+                display: inline-block;
+                background-size: cover;
+                height: 22px;
+                width: 25px;
+                margin-right: 40px;
+            }
+    
+            // Email
+            a.tm-mail {
+                background-image: url("../../public/img/icons/email.png");
+                display: inline-block;
+                background-size: cover;
+                height: 25px;
+                width: 27px;
+                margin-right: 40px;
+            }
+    
+            // Téléphone
+            a.tm-btn {
+                border: 1px solid #95B3D8;
+                border-radius: 10px;
+                padding: 0.4rem;
+                text-decoration: none;
+                color: white;
+                background-color: #95B3D8;
+                margin-right: 10px;
+            }
+        }
+    }
+    
+
+    // Paragraphe de présentation avec image de fond
+    .tm-description {
+
+        background-image: url(../../public/img/entete/entete.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+
+        h1 {
+            display: none;
+        }
+
+        .tm-title {
+            position: absolute;
+            bottom: 20px;
+            left: 550px;
+
+            h2 {
+                font-size: 2.4rem;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .tm-metier {
+                font-size: 3.5rem;
+                font-weight: bold;
+                color: #E2B147;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding-left: 50px;
+            }
+
+            .tm-stage {
+                font-size: 1.4rem;
+            }
+        }
+    }  
+}
+
+
+/* ####################
+      FIN ENTETE
+#####################*/  

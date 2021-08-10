@@ -1,0 +1,466 @@
+/* ####################
+        LOISIRS
+#####################*/
+
+// Mise en forme de la section loisirs
+#tm-loisirs {
+
+    background-color: #EBEBEB;
+    padding: 30px 100px 100px;
+
+
+    h3 {
+        margin-top: 0;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 75px;
+        font-size: 2.8rem;
+
+        a {
+            background-image: url("../../public/img/icons/loisir.png");
+            display: inline-block;
+            background-size: cover;
+            height: 30px;
+            width: 30px;
+            margin-right: 25px;
+            background-position: center
+        }
+    }
+
+    // Div qui contient tous les loisirs
+    .tm-container1 {
+
+        display: flex;
+        // box-sizing: border-box;
+        // flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        
+
+    // 1ère photo loisir : 
+
+        // Div container du 1er loisir
+        .tm-photo1 {
+            height: 300px;
+            width: 30%;
+            margin-right: 4.5%;
+            margin-bottom: 50px;
+            position: relative; 
+        }
+        
+        // Mise en forme avant le hover
+        .tm-photo1:before {
+            content: '';
+            background: url(../../public/img/loisirs/drums.jpg);
+            background-size : cover;
+            background-position : 50% 100%;
+            transition: 0.5s;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            position:relative;
+            z-index:1; 
+        }
+
+        // Container qui contient l'image et texte
+        .tm-content {
+            background-color: rgba(33, 33, 33, 0.8);
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: 0.5s;
+            z-index:2
+        }
+
+        // Logo du 1er loisir
+        .tm-loisir1 {
+            height: 100px;
+            width: 110px;
+            margin-top: 40px;
+            margin-left: 140px;
+        }
+
+        .tm-sp1 {
+            width: 70px;
+        }
+
+        .tm-txt1 {
+            margin-left: 140px;
+        }
+
+        // Opacitée avant le passage sur le hover
+        .tm-photo1:hover:before {
+            opacity: 0.5;
+        }
+        
+        // Opacitée au passage sur le hover
+        .tm-photo1:hover .tm-content {
+            opacity: 0.8;
+        }
+
+
+    // 2ème photo loisir : 
+
+        // Div container du 2ème loisir
+        .tm-photo2 {
+            height: 300px;
+            width: 30%;
+            margin-right: 4.5%;
+            position: relative; 
+        }
+        
+        // Mise en forme avant le hover
+        .tm-photo2:before {
+            content: '';
+            background: url(../../public/img/loisirs/sport.jpg);
+            background-size : cover;
+            background-position : 50% 100%;
+            transition: 0.5s;
+            display: inline-block;
+            height: 100%;
+            width:100%;
+            position:relative;
+            z-index:1; 
+        }
+
+        // Container qui contient l'image et texte
+        .tm-content1 {
+            background-color: rgba(33, 33, 33, 0.8);
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: 0.5s;
+            z-index:2
+        }
+
+        // Logos du 2ème loisir
+        .tm-loisir2-1 {
+            height: 80px;
+            width: 80px;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        .tm-loisir2-2 {
+            height: 80px;
+            width: 80px;
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+
+        hr {
+            width: 70px;
+        }
+
+        .tm-txt2 {
+            margin-left: 70px;
+        }
+
+        // Opacitée avant le passage sur le hover
+        .tm-photo2:hover:before {
+            opacity: 0.5;
+        }
+        
+        // Opacitée au passage sur le hover
+        .tm-photo2:hover .tm-content1 {
+            opacity: 0.8;
+        }
+
+
+    // 3ème photo loisir :
+
+        // Div container du 3ème loisir
+        .tm-photo3 {
+            height: 300px;
+            width: 30%;
+            position: relative; 
+        }
+        
+        // Mise en forme avant le hover
+        .tm-photo3:before {
+            content: '';
+            background: url(../../public/img/loisirs/moto.jpg);
+            background-size : cover;
+            background-position : 50% 100%;
+            transition: 0.5s;
+            display: inline-block;
+            height: 100%;
+            width:100%;
+            position:relative;
+            z-index:1; 
+        }
+
+        // Container qui contient l'image et texte
+        .tm-content2 {
+            background-color: rgba(33, 33, 33, 0.8);
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: 0.5s;
+            z-index:2
+        }
+
+        // Logos du 3ème loisir
+        .tm-loisir3-1 {
+            height: 100px;
+            width: 100px;
+            margin-top: 40px;
+            margin-left: 80px;
+        }
+
+        .tm-loisir3-2 {
+            height: 100px;
+            width: 100px;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        hr {
+            width: 70px;
+        }
+
+        .tm-txt3 {
+            margin-left: 110px;
+        }
+
+        // Opacitée avant le passage sur le hover
+        .tm-photo3:hover:before {
+            opacity: 0.5;
+        }
+        
+        // Opacitée au passage sur le hover
+        .tm-photo3:hover .tm-content2 {
+            opacity: 0.8;
+        }
+
+
+    // 4ème photo loisir :
+
+        // Div container du 4ème loisir
+        .tm-photo4 {
+            height: 300px;
+            width: 30%;
+            margin-right: 4.5%;
+            position: relative; 
+        }
+        
+        // Mise en forme avant le hover
+        .tm-photo4:before {
+            content: '';
+            background: url(../../public/img/loisirs/movie.jpg);
+            background-size : cover;
+            background-position : 50% 100%;
+            transition: 0.5s;
+            display: inline-block;
+            height: 100%;
+            width:100%;
+            position:relative;
+            z-index:1; 
+        }
+
+        // Container qui contient l'image et texte
+        .tm-content3 {
+            background-color: rgba(33, 33, 33, 0.8);
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: 0.5s;
+            z-index:2
+        }
+
+        // Logo du 4ème loisir
+        .tm-loisir4 {
+            height: 70px;
+            width: 70px;
+            margin-top: 60px;
+            margin-left: 172px;
+        }
+
+        hr {
+            width: 70px;
+        }
+
+        .tm-txt4 {
+            margin-left: 140px;
+        }
+
+        // Opacitée avant le passage sur le hover
+        .tm-photo4:hover:before {
+            opacity: 0.5;
+        }
+        
+        // Opacitée au passage sur le hover
+        .tm-photo4:hover .tm-content3 {
+            opacity: 0.8;
+        }
+
+
+    // 5ème photo loisir : 
+
+        // Div container du 5ème loisir
+        .tm-photo5 {
+            height: 300px;
+            width: 30%;
+            margin-right: 4.5%;
+            position: relative; 
+        }
+        
+        // Mise en forme avant le hover
+        .tm-photo5:before{
+            content: '';
+            background: url(../../public/img/loisirs/voyage.jpg);
+            background-size : cover;
+            background-position : 50% 100%;
+            transition: 0.5s;
+            display: inline-block;
+            height: 100%;
+            width:100%;
+            position:relative;
+            z-index:1; 
+        }
+
+        // Container qui contient l'image et texte
+        .tm-content4 {
+            background-color: rgba(33, 33, 33, 0.8);
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: 0.5s;
+            z-index:2
+        }
+
+        // Logo du 5ème loisir
+        .tm-loisir5 {
+            height: 90px;
+            width: 90px;
+            margin-top: 60px;
+            margin-left: 150px;
+        }
+
+        hr {
+            width: 70px;
+        }
+
+        .tm-txt5 {
+            margin-left: 140px;
+        }
+
+        // Opacitée avant le passage sur le hover
+        .tm-photo5:hover:before{
+            opacity: 0.5;
+        }
+        
+        // Opacitée au passage sur le hover
+        .tm-photo5:hover .tm-content4 {
+            opacity: 0.8;
+        }
+
+
+    // 6ème photo loisir : 
+
+        // Div container du 6ème loisir
+        .tm-photo6 {
+            height: 300px;
+            width: 30%;
+            position: relative; 
+        }
+        
+        // Mise en forme avant le hover
+        .tm-photo6:before{
+            content: '';
+            background: url(../../public/img/loisirs/nouvelles-technologies.jpg);
+            background-size : cover;
+            background-position : 50% 100%;
+            transition: 0.5s;
+            display: inline-block;
+            height: 100%;
+            width:100%;
+            position:relative;
+            z-index:1; 
+        }
+
+        // Container qui contient l'image et texte
+        .tm-content5 {
+            background-color: rgba(33, 33, 33, 0.8);
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: 0.5s;
+            z-index:2
+        }
+
+        // Logo du 6ème loisir  
+        .tm-loisir6 {
+            height: 90px;
+            width: 90px;
+            margin-top: 60px;
+            margin-left: 150px;
+        }
+
+        hr {
+            width: 70px;
+        }
+
+        .tm-txt6 {
+            text-align: center;
+
+        }
+        
+        // Opacitée avant le passage sur le hover
+        .tm-photo6:hover:before{
+            opacity: 0.5;
+        }
+        
+        // Opacitée au passage sur le hover
+        .tm-photo6:hover .tm-content5 {
+            opacity: 0.8;
+        }
+    }
+
+}
+
+
+/* ####################
+      FIN LOISIRS
+#####################*/

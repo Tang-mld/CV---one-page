@@ -1,0 +1,90 @@
+/* ####################
+        FOOTER 
+#####################*/
+
+
+#tm-footer {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #202020;
+    height: 130px;
+
+    // Logo de mon CV TMD
+    .tm-logo {
+        // background-image: url("../../public/img/icons/compétences.png");
+        // background-size: cover;
+        // color: white;
+        flex: 0 0 20%;
+        margin-top: 15px;
+        margin-left: 10px;
+        align-self: center;
+
+        a {
+            color: white;      
+            text-decoration: none;
+        }
+    }
+
+    // Boutton pour télécharger le CV
+    .tm-btn-cv {
+            height: 30px;
+            width: 200px;
+            border-radius: 10px;
+            color: #202020;
+            background-color: #95B3D8;
+            align-self: center;
+            text-align: center;
+            padding-top: 10px;
+        
+            .tm-btn-cv1 {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+    // Logo avec liens pour Linkedin, email et numéro de tel
+    .tm-reseau1 {
+        flex: 0 0 20%;
+        display: flex;
+        text-align: right;
+        align-self: center;
+        align-items: center;
+
+        // Linkedin
+        a.tm-linkedin {
+            background-image: url("../../public/img/icons/linkedIn.png");
+            display: inline-block;
+            background-size: cover;
+            height: 22px;
+            width: 25px;
+            margin-right: 40px;
+        }
+
+        // Email
+        a.tm-mail {
+            background-image: url("../../public/img/icons/email.png");
+            display: inline-block;
+            background-size: cover;
+            height: 25px;
+            width: 27px;
+            margin-right: 40px;
+        }
+
+        // Téléphone
+        a.tm-btn {
+            border: 1px solid #95B3D8;
+            border-radius: 10px;
+            padding: 0.4rem;
+            text-decoration: none;
+            color: white;
+            background-color: #95B3D8;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+/* ####################
+      FIN FOOTER
+#####################*/

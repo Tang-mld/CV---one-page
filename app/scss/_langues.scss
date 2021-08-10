@@ -1,0 +1,114 @@
+/* ####################
+        LANGUES
+#####################*/
+
+
+#tm-language {
+    background-color: #202020;
+    color: white;
+}
+
+// Mise en place de la, liste a puce qui contient les progressbar
+#tm-langues {
+
+    list-style: none;
+	font: 12px;
+	width: 300px;
+	margin: auto;
+	position: relative;
+	line-height: 2em;
+	padding: 20px 0;
+
+    h3 {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 75px;
+        font-size: 2.8rem;
+
+        a {
+            background-image: url("../../public/img/icons/langue.png");
+            display: inline-block;
+            background-size: cover;
+            height: 30px;
+            width: 30px;
+            margin-right: 25px;
+            background-position: center
+        }
+    }
+
+    // Mise en forme des li avec les couleurs
+    li { 
+        margin-bottom:100px; 
+        background:#e9e5e2;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+        background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+        background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+        background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+        background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+        background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+        height:20px; 
+        border-radius: 10px; 
+        -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+        -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+        box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	  
+    }
+
+    // Position du titre par rapport aux progressbar
+    li h4 { 
+        position: relative; 
+        top: -45px;
+    }
+
+
+    // Les progressbarre en générale 
+    .barre { 
+        height: 18px; 
+        margin: 1px 2px;  
+        position :absolute;
+        border-radius: 10px;
+        -moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+        -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
+        box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;		
+    }
+
+    // Mise en forme de la progressbarre anglais avec couleurs
+    .anglais {
+        width: 70%; 
+        -moz-animation: anglais 2s ease-out;
+        -webkit-animation: anglais 2s ease-out;
+        background-color: #9EB7D8;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#9EB7D8), to(#95B3D8));
+        background-image: -webkit-linear-gradient(top, #9EB7D8, #95B3D8);
+        background-image: -moz-linear-gradient(top, #9EB7D8, #95B3D8);
+        background-image: -ms-linear-gradient(top, #9EB7D8, #95B3D8);
+        background-image: -o-linear-gradient(top, #9EB7D8, #95B3D8);
+        background-image: linear-gradient(top, #9EB7D8, #95B3D8);
+    }
+
+    // Mise en forme de la progressbarre italien avec couleurs
+    .italien {
+        width:55%;
+        -moz-animation: italien 2s ease-out;
+        -webkit-animation: italien 2s ease-out;
+        background-color: #f0bb4b;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+        background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+        background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+        background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+        background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+        background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+    }
+
+    // Keyframes avec définition du nombre de % de progression
+    @-moz-keyframes anglais {0% {width: 0px;} 100%{ width: 70%;}}
+    @-moz-keyframes italien {0% {width: 0px;} 100%{ width: 55%;}}
+
+    @-webkit-keyframes anglais {0% {width: 0px;} 100%{width: 70%;}}
+    @-webkit-keyframes italien{0% {width: 0px;} 100%{width: 55%;}}
+
+}
+
+
+/* ####################
+      FIN LANGUES
+#####################*/

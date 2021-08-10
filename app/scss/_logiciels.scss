@@ -1,0 +1,781 @@
+/* ####################
+    LOGICIELS
+#####################*/
+
+// Mise en forme du container et titre
+#tm-logiciels {
+
+    width: 100%;
+    height: 1000px;
+    padding-bottom: 75px;
+    text-align: center;
+    background-color: #EBEBEB;
+
+    h3 {
+        margin-top: 0%;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        font-size: 2.8rem;
+
+        a {
+            background-image: url("../../public/img/icons/compétences.png");
+            display: inline-block;
+            background-size: cover;
+            height: 30px;
+            width: 30px;
+            margin-right: 25px;
+            background-position: center;
+        }
+    }
+
+    // Logos des différents logiciels
+    .tm-logo1 {
+        
+        background-image: url("../../public/img/icons\ logiciels/html.png");
+        display: inline-block;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .tm-logo2 {
+        
+        background-image: url("../../public/img/icons\ logiciels/CSS.png");
+        display: inline-block;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .tm-logo3 {
+        
+        background-image: url("../../public/img/icons\ logiciels/javascript.png");
+        display: inline-block;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        background-position: center;
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .tm-logo4 {
+        
+        background-image: url("../../public/img/icons\ logiciels/php.png");
+        display: inline-block;
+        background-size: cover;
+        height: 50px;
+        width: 100px;
+        background-position: center;
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .tm-logo5 {
+        
+        background-image: url("../../public/img/icons\ logiciels/wordpress.png");
+        display: inline-block;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        background-position: center;
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .tm-logo6 {
+        
+        background-image: url("../../public/img/icons\ logiciels/symfony.png");
+        display: inline-block;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        background-position: center;
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .tm-logo7 {
+        
+        background-image: url("../../public/img/icons\ logiciels/angular.png");
+        display: inline-block;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        background-position: center;
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .tm-logo8 {
+        
+        background-image: url("../../public/img/icons\ logiciels/bdd.png");
+        display: inline-block;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+        background-position: center;
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+
+    // Couleurs des cercles : 
+
+    $htmlColor : #E44D26;
+    $cssColor : #0070BA;
+    $jsColor : #E4A126;
+    $phpColor : #787CB4;
+    $angularColor : #DE140E;
+    $wordpressColor : #237BA3;
+    $symfonyColor : #000000;
+    $bddColor : #9D9D9D;
+    $contentColor : #000000;
+    $backgroundColor: #EBEBEB;
+
+
+    // Mise en forme
+    $circle-size: 200px;
+    $circle-background: #D9D9D9;
+    $inset-size: 180px;
+    $transition-length: 1s;
+
+    .tm-log {
+        
+        display: flex;
+        height: 700px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+
+
+/* ####################
+          HTML
+#####################*/
+
+        // Logo HTML
+        .tm-html {
+            display: inline-block;
+            margin: 20px 90px 20px;
+            width:  $circle-size;
+            height: $circle-size;
+
+            background-color: $circle-background;
+            border-radius: 50%;
+
+                // Mise en place du cercle
+                .tm-html-slice, .tm-html-fill {
+                    width:    $circle-size;
+                    height:   $circle-size;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    transition: transform $transition-length;
+                    border-radius: 50%;
+                }
+
+                .tm-html-slice {
+                    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+                    .tm-html-fill {
+                        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+                        background-color: $htmlColor;
+                    }
+                }
+
+            // Overlay du cercle
+            .tm-html-overlay {
+                width:       $inset-size;
+                height:      $inset-size;
+                position:    absolute;
+                margin-left: ($circle-size - $inset-size)/2;
+                margin-top:  ($circle-size - $inset-size)/2;
+
+                background-color: $backgroundColor;
+                border-radius: 50%;
+            }
+
+            // jquerry
+            $i: 0;
+            $increment: 180deg / 100;
+            @while $i <= 100 {
+                &[data-progress='#{$i}'] {
+                        .tm-html-slice.full, .tm-html-fill {
+                transform: rotate($increment * $i);
+                        }	
+                        .tm-html-fill.tm-html-bar {
+                            transform: rotate($increment * $i * 2);
+                        }
+            $i: $i + 1;
+                }
+            }
+        }
+
+        // Pourcentage a l'intérieur du cercle
+        .tm-percent1{
+            color: $htmlColor;
+            font-weight: 800;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 60px;
+            left: 160px;
+        }
+    
+
+
+/* ####################
+        FIN HTML
+#####################*/
+
+
+
+/* ####################
+          CSS
+#####################*/
+
+        // Logo CSS
+        .tm-css {
+            display: inline-block;
+            margin: 20px 90px 20px;
+            width:  $circle-size;
+            height: $circle-size;
+
+            background-color: $circle-background;
+            border-radius: 50%;
+
+                // Mise en place du cercle
+                .tm-css-slice, .tm-css-fill {
+                    width:    $circle-size;
+                    height:   $circle-size;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    transition: transform $transition-length;
+                    border-radius: 50%;
+                }
+
+                .tm-css-slice {
+                    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+                    .tm-css-fill {
+                        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+                        background-color: $cssColor;
+                    }
+                }
+
+            // Overlay du cercle
+            .tm-css-overlay {
+                width:       $inset-size;
+                height:      $inset-size;
+                position:    absolute;
+                margin-left: ($circle-size - $inset-size)/2;
+                margin-top:  ($circle-size - $inset-size)/2;
+
+                background-color: $backgroundColor;
+                border-radius: 50%;
+            }
+
+            // jquerry
+            $i: 0;
+            $increment: 180deg / 100;
+            @while $i <= 100 {
+                &[data-progress='#{$i}'] {
+                        .tm-css-slice.full, .tm-css-fill {
+                transform: rotate($increment * $i);
+                        }	
+                        .tm-css-fill.tm-css-bar {
+                            transform: rotate($increment * $i * 2);
+                        }
+            $i: $i + 1;
+                }
+            }
+        }
+
+        // Pourcentage a l'intérieur du cercle
+        .tm-percent2{
+            color: $cssColor;
+            font-weight: 800;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 60px;
+            left: 540px;
+        }
+
+
+/* ####################
+        FIN CSS
+#####################*/
+
+
+
+/* ####################
+          JS
+#####################*/
+
+        // Logo JS
+        .tm-javascript {
+            display: inline-block;
+            margin: 20px 90px 20px;
+            width:  $circle-size;
+            height: $circle-size;
+
+            background-color: $circle-background;
+            border-radius: 50%;
+
+                // Mise en place du cercle
+                .tm-javascript-slice, .tm-javascript-fill {
+                    width:    $circle-size;
+                    height:   $circle-size;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    transition: transform $transition-length;
+                    border-radius: 50%;
+                }
+
+                .tm-javascript-slice {
+                    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+                    .tm-javascript-fill {
+                        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+                        background-color: $jsColor;
+                    }
+                }
+
+            // Overlay du cercle
+            .tm-javascript-overlay {
+                width:       $inset-size;
+                height:      $inset-size;
+                position:    absolute;
+                margin-left: ($circle-size - $inset-size)/2;
+                margin-top:  ($circle-size - $inset-size)/2;
+
+                background-color: $backgroundColor;
+                border-radius: 50%;
+            }
+
+            // jquerry
+            $i: 0;
+            $increment: 180deg / 100;
+            @while $i <= 100 {
+                &[data-progress='#{$i}'] {
+                        .tm-javascript-slice.full, .tm-javascript-fill {
+                transform: rotate($increment * $i);
+                        }	
+                        .tm-javascript-fill.tm-javascript-bar {
+                            transform: rotate($increment * $i * 2);
+                        }
+            $i: $i + 1;
+                }
+            }
+        }
+
+        // Pourcentage a l'intérieur du cercle
+        .tm-percent3{
+            color: $jsColor;
+            font-weight: 800;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 60px;
+            left: 920px;
+        }
+
+
+/* ####################
+        FIN JS
+#####################*/
+
+
+/* ####################
+          PHP
+#####################*/
+
+        // Logo PHP
+        .tm-php {
+            display: inline-block;
+            margin: 20px 89px 20px;
+            width:  $circle-size;
+            height: $circle-size;
+
+            background-color: $circle-background;
+            border-radius: 50%;
+
+                // Mise en place du cercle
+                .tm-php-slice, .tm-php-fill {
+                    width:    $circle-size;
+                    height:   $circle-size;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    transition: transform $transition-length;
+                    border-radius: 50%;
+                }
+
+                .tm-php-slice {
+                    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+                    .tm-php-fill {
+                        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+                        background-color: $phpColor;
+                    }
+                }
+
+            // Overlay du cercle
+            .tm-php-overlay {
+                width:       $inset-size;
+                height:      $inset-size;
+                position:    absolute;
+                margin-left: ($circle-size - $inset-size)/2;
+                margin-top:  ($circle-size - $inset-size)/2;
+
+                background-color: $backgroundColor;
+                border-radius: 50%;
+            }
+
+            // jquerry
+            $i: 0;
+            $increment: 180deg / 100;
+            @while $i <= 100 {
+                &[data-progress='#{$i}'] {
+                        .tm-php-slice.full, .tm-php-fill {
+                transform: rotate($increment * $i);
+                        }	
+                        .tm-php-fill.tm-php-bar {
+                            transform: rotate($increment * $i * 2);
+                        }
+            $i: $i + 1;
+                }
+            }
+        }
+
+        // Pourcentage a l'intérieur du cercle
+        .tm-percent4{
+            color: $phpColor;
+            font-weight: 800;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 60px;
+            left: 1300px;
+        }
+
+
+/* ####################
+        FIN PHP
+#####################*/
+
+
+/* ####################
+        WORDPRESS
+#####################*/
+
+        // Logo Wordpress
+        .tm-wordpress {
+            display: inline-block;
+            margin: 20px 90px 20px;
+            width:  $circle-size;
+            height: $circle-size;
+
+            background-color: $circle-background;
+            border-radius: 50%;
+
+                // Mise en place du cercle
+                .tm-wordpress-slice, .tm-wordpress-fill {
+                    width:    $circle-size;
+                    height:   $circle-size;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    transition: transform $transition-length;
+                    border-radius: 50%;
+                }
+
+                .tm-wordpress-slice {
+                    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+                    .tm-wordpress-fill {
+                        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+                        background-color: $wordpressColor;
+                    }
+                }
+
+            // Overlay du cercle
+            .tm-wordpress-overlay {
+                width:       $inset-size;
+                height:      $inset-size;
+                position:    absolute;
+                margin-left: ($circle-size - $inset-size)/2;
+                margin-top:  ($circle-size - $inset-size)/2;
+
+                background-color: $backgroundColor;
+                border-radius: 50%;
+            }
+
+            // jquerry
+            $i: 0;
+            $increment: 180deg / 100;
+            @while $i <= 100 {
+                &[data-progress='#{$i}'] {
+                        .tm-wordpress-slice.full, .tm-wordpress-fill {
+                transform: rotate($increment * $i);
+                        }	
+                        .tm-wordpress-fill.tm-wordpress-bar {
+                            transform: rotate($increment * $i * 2);
+                        }
+            $i: $i + 1;
+                }
+            }
+        }
+
+        // Pourcentage a l'intérieur du cercle
+        .tm-percent5{
+            color: $wordpressColor;
+            font-weight: 800;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 440px;
+            left: 155px;
+        }
+
+
+/* ####################
+    FIN WORDPRESS
+#####################*/
+
+
+
+/* ####################
+        SYMFONY
+#####################*/
+
+        // Logo Symfony
+        .tm-symfony {
+            display: inline-block;
+            margin: 20px 90px 20px;
+            width:  $circle-size;
+            height: $circle-size;
+
+            background-color: $circle-background;
+            border-radius: 50%;
+
+                // Mise en place du cercle
+                .tm-symfony-slice, .tm-symfony-fill {
+                    width:    $circle-size;
+                    height:   $circle-size;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    transition: transform $transition-length;
+                    border-radius: 50%;
+                }
+
+                .tm-symfony-slice {
+                    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+                    .tm-symfony-fill {
+                        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+                        background-color: $symfonyColor;
+                    }
+                }
+
+            // Overlay du cercle
+            .tm-symfony-overlay {
+                width:       $inset-size;
+                height:      $inset-size;
+                position:    absolute;
+                margin-left: ($circle-size - $inset-size)/2;
+                margin-top:  ($circle-size - $inset-size)/2;
+
+                background-color: $backgroundColor;
+                border-radius: 50%;
+            }
+
+            // jquerry
+            $i: 0;
+            $increment: 180deg / 100;
+            @while $i <= 100 {
+                &[data-progress='#{$i}'] {
+                        .tm-symfony-slice.full, .tm-symfony-fill {
+                transform: rotate($increment * $i);
+                        }	
+                        .tm-symfony-fill.tm-symfony-bar {
+                            transform: rotate($increment * $i * 2);
+                        }
+            $i: $i + 1;
+                }
+            }
+        }
+
+        // Pourcentage a l'intérieur du cercle
+        .tm-percent6{
+            color: $symfonyColor;
+            font-weight: 800;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 440px;
+            left: 540px;
+        }
+
+
+/* ####################
+    FIN SYMFONY
+#####################*/
+
+
+/* ####################
+        ANGULAR
+#####################*/
+
+        // Logo Angular
+        .tm-angular {
+            display: inline-block;
+            margin: 20px 90px 20px;
+            width:  $circle-size;
+            height: $circle-size;
+
+            background-color: $circle-background;
+            border-radius: 50%;
+
+                // Mise en place du cercle
+                .tm-angular-slice, .tm-angular-fill {
+                    width:    $circle-size;
+                    height:   $circle-size;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    transition: transform $transition-length;
+                    border-radius: 50%;
+                }
+
+                .tm-angular-slice {
+                    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+                    .tm-angular-fill {
+                        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+                        background-color: $angularColor;
+                    }
+                }
+
+            // Overlay du cercle
+            .tm-angular-overlay {
+                width:       $inset-size;
+                height:      $inset-size;
+                position:    absolute;
+                margin-left: ($circle-size - $inset-size)/2;
+                margin-top:  ($circle-size - $inset-size)/2;
+
+                background-color: $backgroundColor;
+                border-radius: 50%;
+            }
+
+            // jquerry
+            $i: 0;
+            $increment: 180deg / 100;
+            @while $i <= 100 {
+                &[data-progress='#{$i}'] {
+                        .tm-angular-slice.full, .tm-angular-fill {
+                transform: rotate($increment * $i);
+                        }	
+                        .tm-angular-fill.tm-angular-bar {
+                            transform: rotate($increment * $i * 2);
+                        }
+            $i: $i + 1;
+                }
+            }
+        }
+
+        // Pourcentage a l'intérieur du cercle
+        .tm-percent7{
+            color: $angularColor;
+            font-weight: 800;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 440px;
+            left: 918px;
+        }
+
+
+/* ####################
+    FIN ANGULAR
+#####################*/
+
+
+/* ####################
+         BDD
+#####################*/
+
+        // Logo BDD
+        .tm-bdd {
+            display: inline-block;
+            margin: 20px 89px 20px;
+            width:  $circle-size;
+            height: $circle-size;
+
+            background-color: $circle-background;
+            border-radius: 50%;
+
+                // Mise en place du cercle
+                .tm-bdd-slice, .tm-bdd-fill {
+                    width:    $circle-size;
+                    height:   $circle-size;
+                    position: absolute;
+                    -webkit-backface-visibility: hidden;
+                    transition: transform $transition-length;
+                    border-radius: 50%;
+                }
+
+                .tm-bdd-slice {
+                    clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+                    .tm-bdd-fill {
+                        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+                        background-color: $bddColor;
+                    }
+                }
+
+            // Overlay du cercle
+            .tm-bdd-overlay {
+                width:       $inset-size;
+                height:      $inset-size;
+                position:    absolute;
+                margin-left: ($circle-size - $inset-size)/2;
+                margin-top:  ($circle-size - $inset-size)/2;
+
+                background-color: $backgroundColor;
+                border-radius: 50%;
+            }
+
+            // jquerry
+            $i: 0;
+            $increment: 180deg / 100;
+            @while $i <= 100 {
+                &[data-progress='#{$i}'] {
+                        .tm-bdd-slice.full, .tm-bdd-fill {
+                transform: rotate($increment * $i);
+                        }	
+                        .tm-bdd-fill.tm-bdd-bar {
+                            transform: rotate($increment * $i * 2);
+                        }
+            $i: $i + 1;
+                }
+            }
+        }
+
+        // Pourcentage a l'intérieur du cercle
+        .tm-percent8{
+            color: $bddColor;
+            font-weight: 800;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 440px;
+            left: 1298px;
+        }
+    }
+
+
+/* ####################
+        FIN BDD
+#####################*/
+
+}
+
+
+/* ####################
+    FIN LOGICIEL
+#####################*/

@@ -1,0 +1,314 @@
+/* ####################
+    DIPLOMES
+#####################*/
+
+// Mise en page de la section diplomes avec titre
+#tm-diplomes {
+
+    background-color: #EBEBEB;
+    color: white;
+
+    .tm-container {
+        width: auto;
+        margin-right: 100px;
+        margin-left: 100px;
+        padding-bottom: 75px;
+
+        .sdl {
+            width: 800px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .tm-dipTitle {
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 50px;
+        font-size: 2.8rem;
+        color: black;
+        margin-top: 0;
+
+        a {
+            background-image: url("../../public/img/icons/diplomes.png");
+            display: inline-block;
+            background-size: cover;
+            height: 30px;
+            width: 30px;
+            margin-right: 25px;
+            background-position: center
+        }
+    }
+
+
+    // 1er diplôme : 
+
+    // Div 1 à gauche avec diplome et école
+    .tm-firstDip {
+
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 200px;
+
+        .tm-ecole {
+            display: inline-block;
+            width: 25%;
+            border-radius: 20% 10%;
+            background-color: #E2B147;
+            height: 130px;
+            
+            h4 {
+                margin-top: 25px;
+            }
+        }
+
+        // Div 1 avec la date
+        .tm-date {
+            display: inline-block;
+            width: 20%;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: #95B3D8;
+            height: 80px;
+            border-radius: 30px;
+            margin-top: 20px;
+            
+            p {
+                margin-top: 25px;
+            }
+        }
+
+        // Div 1 à droite avec type de diplome et entreprise
+        .tm-resume {
+            display: inline-block;
+            width: 25%;
+            background-color: #E2B147;
+            height: 130px;
+            border-radius: 10% 20%;
+
+            h4 {
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    // 2ème diplôme : 
+
+    // Div 2 à gauche avec diplome et école
+    .tm-scdDip {
+
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 200px;
+
+        .tm-ecole {
+            display: inline-block;
+            width: 25%;
+            border-radius: 20% 10%;
+            background-color: #E2B147;
+            height: 130px;
+
+            h4 {
+                margin-top: 25px;
+            }
+        }
+
+        // Div 2 avec la date
+        .tm-date {
+            display: inline-block;
+            width: 20%;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: #95B3D8;
+            height: 80px;
+            border-radius: 30px;
+            margin-top: 20px;
+
+            p {
+                margin-top: 25px;
+            }
+        }
+
+        // Div 2 à droite avec type de diplome et entreprise
+        .tm-resume {
+            display: inline-block;
+            width: 25%;
+            background-color: #E2B147;
+            color: white;
+            height: 130px;
+            border-radius: 10% 20%;
+
+            h4 {
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    // 3ème diplome : 
+
+    // Div 3 à gauche avec diplome et école
+    .tm-thirdDip {
+
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 200px;
+
+        .tm-ecole {
+            display: inline-block;
+            width: 25%;
+            border-radius: 20% 10%;
+            background-color: #E2B147;
+            height: 130px;
+
+            h4 {
+                margin-top: 45px;
+            }
+        }
+
+        // Div 3 avec la date
+        .tm-date {
+            display: inline-block;
+            width: 20%;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: #95B3D8;
+            height: 80px;
+            border-radius: 30px;
+            margin-top: 20px;
+
+            p {
+                margin-top: 25px;
+            }
+        }
+
+        // Div 3 à droite avec type de diplome et l'école
+        .tm-resume {
+            display: inline-block;
+            width: 25%;
+            background-color: #E2B147;
+            height: 130px;
+            border-radius: 10% 20%;
+
+            h4 {
+                margin-top: 35px;
+            }
+        }
+    }
+
+
+    // Diplome percussion : 
+
+    // Div 4 à gauche avec diplome de percussion
+    .tm-percuDip {
+
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 200px;
+
+        .tm-ecole {
+            display: inline-block;
+            width: 25%;
+            border-radius: 20% 10%;
+            background-color: #E2B147;
+            height: 130px;
+
+            h4 {
+                margin-top: 55px;
+            }
+        }
+
+        // Div 4 avec la date
+        .tm-date {
+            display: inline-block;
+            width: 20%;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: #95B3D8;
+            height: 80px;
+            border-radius: 30px;
+            margin-top: 20px;
+
+            p {
+                margin-top: 25px;
+            }
+        }
+
+        // Div 4 à droite avec type de diplome et l'école
+        .tm-resume {
+            display: inline-block;
+            width: 25%;
+            background-color: #E2B147;
+            height: 130px;
+            border-radius: 10% 20%;
+
+            h4 {
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+    // Diplome solfège : 
+
+    // Div 5 à gauche avec diplome de solfège
+    .tm-solfegeDip {
+
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 200px;
+
+        .tm-ecole {
+            display: inline-block;
+            width: 25%;
+            border-radius: 20% 10%;
+            background-color: #E2B147;
+            height: 130px;
+
+            h4 {
+                margin-top: 55px;
+            }
+        }
+
+        // Div 5 avec la date
+        .tm-date {
+            display: inline-block;
+            width: 20%;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: #95B3D8;
+            height: 80px;
+            border-radius: 30px;
+            margin-top: 20px;
+
+            p {
+                margin-top: 25px;
+            }
+        }
+
+        // Div 5 à droite avec type de diplome et l'école
+        .tm-resume {
+            display: inline-block;
+            width: 25%;
+            background-color: #E2B147;
+            height: 130px;
+            border-radius: 10% 20%;
+
+            h4 {
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+}
+
+
+/* ####################
+    FIN DIPLOME
+#####################*/

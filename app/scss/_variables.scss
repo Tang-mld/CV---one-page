@@ -1,0 +1,29 @@
+// Google font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+// Font
+$font-main: 'Open Sans', 'sans serif';
+$font-headings1: 'Open Sans', 'sans serif';
+$font-headings2: 'Open Sans', 'sans serif';
+$font-headings3: 'Open Sans', 'sans serif';
+
+// Colors
+$fond-informations: #95B3D8;
+$color-text-information: #FFFFFF;
+
+// Paddings
+$padding : 0.8rem;
+$padding-xxs : $padding*0.125;
+$padding-xs : $padding*0.25;
+$padding-xs : $padding*0.25;
+$padding-s : $padding*0.5;
+$padding-l : $padding*2;
+$padding-xl : $padding*4;
+$padding-xxl : $padding*8;
+
+// Réinitialisation du body
+body {
+    margin: 0;
+    padding: 0;
+}
