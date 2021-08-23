@@ -83,12 +83,14 @@
             z-index:2
         }
 
-        // Logo du 1er loisir
         .tm-loisir1 {
-            height: 100px;
+            background-image: url("../../public/img/icons/drum.png");
+            display: inline-block;
+            background-size: cover;
             width: 110px;
-            margin-top: 40px;
+            height: 100px;
             margin-left: 140px;
+            margin-top: 40px;
         }
 
         .tm-sp1 {
@@ -152,6 +154,9 @@
 
         // Logos du 2ème loisir
         .tm-loisir2-1 {
+            background-image: url("../../public/img/icons/gants.png");
+            display: inline-block;
+            background-size: cover;
             height: 80px;
             width: 80px;
             margin-top: 50px;
@@ -159,6 +164,9 @@
         }
 
         .tm-loisir2-2 {
+            background-image: url("../../public/img/icons/kimono.png");
+            display: inline-block;
+            background-size: cover;
             height: 80px;
             width: 80px;
             margin-top: 50px;
@@ -225,6 +233,9 @@
 
         // Logos du 3ème loisir
         .tm-loisir3-1 {
+            background-image: url("../../public/img/icons/voiture.png");
+            display: inline-block;
+            background-size: cover;
             height: 100px;
             width: 100px;
             margin-top: 40px;
@@ -232,6 +243,9 @@
         }
 
         .tm-loisir3-2 {
+            background-image: url("../../public/img/icons/moto.png");
+            display: inline-block;
+            background-size: cover;
             height: 100px;
             width: 100px;
             margin-top: 40px;
@@ -299,6 +313,9 @@
 
         // Logo du 4ème loisir
         .tm-loisir4 {
+            background-image: url("../../public/img/icons/film.png");
+            display: inline-block;
+            background-size: cover;
             height: 70px;
             width: 70px;
             margin-top: 60px;
@@ -366,10 +383,13 @@
 
         // Logo du 5ème loisir
         .tm-loisir5 {
+            background-image: url("../../public/img/icons/voyage.png");
+            display: inline-block;
+            background-size: cover;
             height: 90px;
             width: 90px;
             margin-top: 60px;
-            margin-left: 150px;
+            margin-left: 153px;
         }
 
         hr {
@@ -432,6 +452,9 @@
 
         // Logo du 6ème loisir  
         .tm-loisir6 {
+            background-image: url("../../public/img/icons/nouvelles-technologies.png");
+            display: inline-block;
+            background-size: cover;
             height: 90px;
             width: 90px;
             margin-top: 60px;

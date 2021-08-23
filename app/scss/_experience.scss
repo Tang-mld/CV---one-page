@@ -69,7 +69,10 @@
                 margin-right: 30px;
                 text-align: right;
 
-                img {
+                .tm-hb {
+                    background-image: url("../../public/img/logos-entreprises/Human-Booster.png");
+                    display: inline-block;
+                    background-size: cover;
                     width: 150px;
                     height: 100px;
                 }
@@ -122,6 +125,9 @@
 
             // Séparateur de texte horizontale 
             .tm-separateur1 {
+                background-image: url("../../public/img/logos-entreprises/separateur.png");
+                display: inline-block;
+                background-size: cover;
                 width: 300px;
                 height: 50px;
                 position: absolute;
@@ -184,11 +190,12 @@
                 margin-top: 80px;
                 margin-left: 29px;
 
-                img {
+                .tm-easydis {
+                    background-image: url("../../public/img/logos-entreprises/easydis.png");
+                    display: inline-block;
+                    background-size: cover;
                     width: 150px;
-                    height: 80px;
-                    margin-left: 0;
-                    padding-top: 20px;
+                    height: 100px;
                 }
                 
                 ul {
@@ -207,6 +214,9 @@
 
             // Séparateur de texte horizontale 
             .tm-separateur2 {
+                background-image: url("../../public/img/logos-entreprises/separateur.png");
+                display: inline-block;
+                background-size: cover;
                 width: 300px;
                 height: 50px;
                 position: absolute;
@@ -237,11 +247,12 @@
                 margin-right: 30px;
                 text-align: right;
 
-                img {
+                .tm-BD {
+                    background-image: url("../../public/img/logos-entreprises/Brico\ depot.png");
+                    display: inline-block;
+                    background-size: cover;
                     width: 100px;
                     height: 60px;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
                 }
                 
                 ul {
@@ -283,16 +294,20 @@
                     margin-bottom: 3rem;
                 }
 
-                img {
+                .tm-eklya {
+                    background-image: url("../../public/img/logos-entreprises/Eklya.png");
+                    display: inline-block;
+                    background-size: cover;
                     width: 100px;
                     height: 80px;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
                 }
             }
 
             // Séparateur de texte horizontale 
             .tm-separateur3 {
+                background-image: url("../../public/img/logos-entreprises/separateur.png");
+                display: inline-block;
+                background-size: cover;
                 width: 300px;
                 height: 50px;
                 position: absolute;
@@ -334,11 +349,12 @@
                     margin-bottom: 3rem;
                 }
 
-                img {
+                .tm-decisionFormation {
+                    background-image: url("../../public/img/logos-entreprises/Decision-formation.png");
+                    display: inline-block;
+                    background-size: cover;
                     width: 150px;
-                    height: 80px;
-                    margin-left: 0;
-                    padding-top: 20px;
+                    height: 78px;
                 }
             }
 
@@ -361,11 +377,12 @@
                 margin-top: 80px;
                 margin-left: 29px;
 
-                img {
+                .tm-BD {
+                    background-image: url("../../public/img/logos-entreprises/Brico\ depot.png");
+                    display: inline-block;
+                    background-size: cover;
                     width: 100px;
                     height: 60px;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
                 }
                 
                 ul {
@@ -380,6 +397,9 @@
 
             // Séparateur de texte horizontale 
             .tm-separateur4 {
+                background-image: url("../../public/img/logos-entreprises/separateur.png");
+                display: inline-block;
+                background-size: cover;
                 width: 300px;
                 height: 50px;
                 position: absolute;
@@ -410,11 +430,12 @@
                 margin-right: 30px;
                 text-align: right;
 
-                img {
-                    width: 150px;
+                .tm-auchan {
+                    background-image: url("../../public/img/logos-entreprises/auchan.png");
+                    display: inline-block;
+                    background-size: cover;
+                    width: 155px;
                     height: 80px;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
                 }
                 
                 ul {
@@ -456,11 +477,12 @@
                     margin-bottom: 3rem;
                 }
 
-                img {
+                .tm-decisionFormation {
+                    background-image: url("../../public/img/logos-entreprises/Decision-formation.png");
+                    display: inline-block;
+                    background-size: cover;
                     width: 150px;
-                    height: 80px;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
+                    height: 78px;
                 }
             }
         }
