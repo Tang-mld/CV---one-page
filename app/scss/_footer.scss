@@ -10,38 +10,40 @@
     background-color: #202020;
     height: 130px;
 
-    // Logo de mon CV TMD
-    .tm-logo {
-        // background-image: url("../../public/img/icons/compétences.png");
-        // background-size: cover;
-        // color: white;
-        flex: 0 0 20%;
-        margin-top: 15px;
-        margin-left: 10px;
-        align-self: center;
-
-        a {
-            color: white;      
-            text-decoration: none;
-        }
+    // Logo du CV
+    .tm-logo1 {
+        background-image: url("../../public/img/entete/Logo\ TMD\ finit.svg");
+        background-size: cover;
+        background-position: center;
+        display: inline-block;
+        width: 160px;
+        height: 110px;
+        margin-top: 10px;
+        margin-left: 100px;
+        margin-right: 60px;
     }
 
     // Boutton pour télécharger le CV
     .tm-btn-cv {
-            height: 30px;
-            width: 200px;
-            border-radius: 10px;
-            color: #202020;
-            background-color: #95B3D8;
-            align-self: center;
-            text-align: center;
-            padding-top: 10px;
+        height: 33px;
+        width: 200px;
+        border-radius: 10px;
+        color: #202020;
+        background-color: #95B3D8;
+        align-self: center;
+        text-align: center;
+        padding-top: 8px;
+        margin-top: 3px;
         
-            .tm-btn-cv1 {
-                text-decoration: none;
-                color: white;
-            }
+        .tm-btn-cv1 {
+            text-decoration: none;
+            color: white;
         }
+    }
+
+    .tm-btn-cv:hover {
+        box-shadow: 5px 5px 10px rgb(226, 177, 71);
+    }
 
     // Logo avec liens pour Linkedin, email et numéro de tel
     .tm-reseau1 {
@@ -61,6 +63,11 @@
             margin-right: 40px;
         }
 
+        a.tm-linkedin:hover {
+            transform: scale(1.5);
+            transition: 0.3s;
+        }
+
         // Email
         a.tm-mail {
             background-image: url("../../public/img/icons/email.png");
@@ -69,6 +76,11 @@
             height: 25px;
             width: 27px;
             margin-right: 40px;
+        }
+
+        a.tm-mail:hover {
+            transform: scale(1.5);
+            transition: 0.3s;
         }
 
         // Téléphone
@@ -80,6 +92,10 @@
             color: white;
             background-color: #95B3D8;
             margin-right: 10px;
+        }
+
+        .tm-btn:hover {
+            box-shadow: 5px 5px 10px rgb(226, 177, 71);
         }
     }
 }

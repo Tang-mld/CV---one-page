@@ -1,6 +1,14 @@
 /* ####################
         ENTETE
 #####################*/  
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
 
 #tm-entete {
 
@@ -10,28 +18,37 @@
         justify-content: space-around;
         margin: auto;
         font-weight: 800;
-        font-size: 1rem;
+        font-size: 1.2rem;
 
-        // Logo du CV TMD
+        // Logo du CV
         .tm-logo {
-            // background-image: url("../../public/img/icons/compétences.png");
-            // background-size: cover;
-            // color: white;
-            // position: absolute;
-            // left: 0;
-            flex: 0 0 20%;
-            margin-top: 15px;
-            margin-left: 5px;
-           
-            a {
-                color: black;      
-                text-decoration: none;
-            }
+            background-image: url("../../public/img/entete/Logo\ TMD\ finit.svg");
+            background-size: cover;
+            background-position: center;
+            width: 100px;
+            height: 80px;
+            position: absolute;
+            left: -10px;
+            top: 10px;
+            transform: translate(25px, -10%);
+            z-index: 2;
+        }
+
+        // Cercle sous logo 
+        .tm-cercle-logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+            border: solid 2px white;
+            position: absolute;
+            left: 5px;
+            box-shadow: inset 0 0 1px 1px  rgb(255, 255, 255);
         }
 
         .tm-navbar {
             flex: 0 0 60%;
             text-align: center;
+            margin-left: 300px;
         }
 
         ul {
@@ -41,7 +58,7 @@
                 list-style: none;
                 display: inline-block;
                 margin-bottom: 15px;
-                margin-right: 20px; 
+                margin-right: 40px; 
 
                 a {
                     text-decoration: none;
@@ -67,6 +84,11 @@
                 width: 25px;
                 margin-right: 40px;
             }
+
+            a.tm-linkedin:hover {
+                transform: scale(1.5);
+                transition: 0.3s;
+            }
     
             // Email
             a.tm-mail {
@@ -76,6 +98,11 @@
                 height: 25px;
                 width: 27px;
                 margin-right: 40px;
+            }
+
+            a.tm-mail:hover {
+                transform: scale(1.5);
+                transition: 0.3s;
             }
     
             // Téléphone
@@ -87,6 +114,10 @@
                 color: white;
                 background-color: #95B3D8;
                 margin-right: 10px;
+            }
+
+            a.tm-btn:hover {
+                box-shadow: 5px 5px 10px rgb(226, 177, 71);
             }
         }
     }
