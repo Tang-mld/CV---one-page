@@ -118,7 +118,7 @@ function ScrollFunction6() {
   if ($(document).scrollTop() > 750){
     document.getElementsByClassName('tm-symfony');
     // On renseigne le max du % du logiciel
-    let maxSymfony = 15;
+    let maxSymfony = 70;
     $('.tm-symfony').attr('data-progress', maxSymfony);
   }
   setTimeout(window.symfony, 200);
