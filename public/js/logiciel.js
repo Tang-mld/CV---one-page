@@ -28,7 +28,7 @@ document.onscroll = function() {
     if ($(document).scrollTop() > 370){
       document.getElementsByClassName('tm-html');
       // On renseigne le max du % du logiciel
-      let maxHtml = 80;
+      let maxHtml = 85;
       $('.tm-html').attr('data-progress', maxHtml);
     }
     setTimeout(window.html, 200);
@@ -46,7 +46,7 @@ function ScrollFunction2() {
   if ($(document).scrollTop() > 370){
     document.getElementsByClassName('tm-css');
     // On renseigne le max du % du logiciel
-    let maxCss = 75;
+    let maxCss = 80;
     $('.tm-css').attr('data-progress', maxCss);
   }
   setTimeout(window.css, 200);
@@ -64,7 +64,7 @@ function ScrollFunction3() {
   if ($(document).scrollTop() > 370){
     document.getElementsByClassName('tm-javascript');
     // On renseigne le max du % du logiciel
-    let maxJs = 65;
+    let maxJs = 70;
     $('.tm-javascript').attr('data-progress', maxJs);
   }
   setTimeout(window.js, 200);
@@ -82,7 +82,7 @@ function ScrollFunction4() {
   if ($(document).scrollTop() > 370){
     document.getElementsByClassName('tm-php');
     // On renseigne le max du % du logiciel
-    let maxPhp = 50;
+    let maxPhp = 70;
     $('.tm-php').attr('data-progress', maxPhp);
   }
   setTimeout(window.php, 200);
@@ -100,7 +100,7 @@ function ScrollFunction5() {
   if ($(document).scrollTop() > 750){
     document.getElementsByClassName('tm-wordpress');
     // On renseigne le max du % du logiciel
-    let maxWordpress = 15;
+    let maxWordpress = 65;
     $('.tm-wordpress').attr('data-progress', maxWordpress);
   }
   setTimeout(window.wordpress, 200);
